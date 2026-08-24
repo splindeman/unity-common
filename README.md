@@ -34,6 +34,11 @@ or gameplay-specific systems — those belong in the individual game's own `Asse
 - `Runtime/GridFloodFill.cs` — breadth-first connected-region search over a `Grid2D<T>`, given a
   predicate for which cells to include. Extracted from Hotel Honcho's chain-detection logic
   since it's genuinely generic (any tile-matching/flood-fill need, not just hotel chains).
+- `Runtime/SafeAreaFitter.cs` — fits a `RectTransform` to `Screen.safeArea`, keeping UI out of
+  notches/cutouts/home indicators, re-applying on orientation change. Only needs `UnityEngine`
+  itself, no extra package — that's the bar for something living here versus staying in a game's
+  own Presentation layer (see `PinchZoomPan` in Hotel Honcho, which needs the Input System
+  package and so stayed put instead of coming here speculatively).
 
 Add to this as real reusable needs come up across projects rather than pre-building things
 speculatively.
