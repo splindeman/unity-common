@@ -28,8 +28,25 @@ or gameplay-specific systems — those belong in the individual game's own `Asse
 
 ## Contents so far
 
-- `Runtime/Singleton.cs` — generic `MonoBehaviour` singleton base class. Minimal starter; add to
-  this as real reusable needs come up across projects rather than pre-building things speculatively.
+- `Runtime/Singleton.cs` — generic `MonoBehaviour` singleton base class.
+- `Runtime/Grid2D.cs` — fixed-size 2D grid container (game-agnostic), indexed by (col, row),
+  with orthogonal-neighbor lookup.
+- `Runtime/GridFloodFill.cs` — breadth-first connected-region search over a `Grid2D<T>`, given a
+  predicate for which cells to include. Extracted from Hotel Honcho's chain-detection logic
+  since it's genuinely generic (any tile-matching/flood-fill need, not just hotel chains).
+
+Add to this as real reusable needs come up across projects rather than pre-building things
+speculatively.
+
+## Note on .meta files
+
+Every file here needs a committed `.meta` file, unlike a normal Unity project's own `Assets/`
+folder. This package gets pulled into other projects via git URL, which Unity treats as an
+**immutable** source — it can only auto-generate missing `.meta` files for *mutable* locations.
+For an immutable package, a missing `.meta` file means Unity silently ignores that asset
+entirely (logged as `Asset ... has no meta file, but it's in an immutable folder`). See
+`D:\Dev\tools\NOTES.md` for how to generate correct ones (a throwaway local Unity project, not
+hand-authored GUIDs) when adding new files here.
 
 ## Versioning
 
