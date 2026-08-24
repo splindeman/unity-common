@@ -11,7 +11,7 @@ Add it to the project's `Packages/manifest.json`:
 ```json
 {
   "dependencies": {
-    "com.splindeman.unity-common": "https://github.com/splindeman/unity-common.git",
+    "com.gamedev.unity-common": "https://github.com/splindeman/unity-common.git",
     ...
   }
 }

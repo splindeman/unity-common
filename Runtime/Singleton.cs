@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Splindeman.UnityCommon
+namespace GameDev.UnityCommon
 {
     /// <summary>
     /// Generic MonoBehaviour singleton base. Not persisted across scenes by

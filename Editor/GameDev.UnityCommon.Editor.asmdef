@@ -1,8 +1,12 @@
 {
-    "name": "Splindeman.UnityCommon.Runtime",
-    "rootNamespace": "Splindeman.UnityCommon",
-    "references": [],
-    "includePlatforms": [],
+    "name": "GameDev.UnityCommon.Editor",
+    "rootNamespace": "GameDev.UnityCommon.Editor",
+    "references": [
+        "GameDev.UnityCommon.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

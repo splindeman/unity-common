@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Splindeman.UnityCommon
+namespace GameDev.UnityCommon
 {
     public static class GridFloodFill
     {

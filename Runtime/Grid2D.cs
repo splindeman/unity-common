@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Splindeman.UnityCommon
+namespace GameDev.UnityCommon
 {
     /// <summary>
     /// Fixed-size rectangular grid of cells, indexed by (col, row) from
