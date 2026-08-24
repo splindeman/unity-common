@@ -1,0 +1,14 @@
+{
+    "name": "Splindeman.UnityCommon.Runtime",
+    "rootNamespace": "Splindeman.UnityCommon",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

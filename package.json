@@ -1,0 +1,10 @@
+{
+  "name": "com.splindeman.unity-common",
+  "version": "0.1.0",
+  "displayName": "Unity Common",
+  "description": "Shared Unity utilities reused across splindeman's game projects.",
+  "unity": "6000.5",
+  "author": {
+    "name": "splindeman"
+  }
+}
