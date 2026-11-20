@@ -50,7 +50,7 @@ folder. This package gets pulled into other projects via git URL, which Unity tr
 **immutable** source — it can only auto-generate missing `.meta` files for *mutable* locations.
 For an immutable package, a missing `.meta` file means Unity silently ignores that asset
 entirely (logged as `Asset ... has no meta file, but it's in an immutable folder`). See
-`D:\Dev\tools\NOTES.md` for how to generate correct ones (a throwaway local Unity project, not
+`D:\Dev\dev-tools\NOTES.md` for how to generate correct ones (a throwaway local Unity project, not
 hand-authored GUIDs) when adding new files here.
 
 ## Versioning
